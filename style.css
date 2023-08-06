@@ -18,10 +18,15 @@ h1{
 p{
     font-size: 1.2rem;
     color: #fff;
+    width: 90%;
 }
 
 h2{
     font-size: 1.7rem;
+}
+
+.content-p{
+    height: 28px;
 }
 
 .footer{
@@ -30,6 +35,7 @@ h2{
     background-color: #c8c2c2;
     display: flex;
     align-items: end;
+    overflow-x: hidden;
 }
 
 .footer-section{
@@ -53,6 +59,11 @@ h2{
      flex-direction: row;
      gap: 20px;
      font-size: 1.8rem;
+}
+
+.footer-name--dis-socialLink{
+    position: relative;
+    left: 20px;
 }
 
 i{
@@ -90,42 +101,28 @@ i:hover{
         height: 60vh;
         flex-wrap: wrap;
     }
-
-    .footer-name--dis-socialLink{
-        position: relative;
-        left: 20px;
-    }
-
     .container{
         margin-right: 20px;
         margin-left: 20px;
     }
 
-    p{
-        width: 90%;
-    }
+   p{
+    width: 90%;
+   }
 }
 
 @media screen and (min-width: 820px) and (max-width:1000px){
     .footer-section{
         background-color: rgba(10, 51, 37, 0.821);
         height: 40vh;
-        flex-wrap: wrap;
         gap: 20px;
     }
-
-    .footer-name--dis-socialLink{
-        position: relative;
-        left: 20px;
-    }
-
 }
 
 @media screen and (min-width: 450px) and (max-width: 550px) {
     .footer-section{
         background-color: rgba(10, 51, 37, 0.821);
         height: 100vh;
-        flex-wrap: wrap;
     }
 
     .container{
@@ -138,7 +135,6 @@ i:hover{
     .footer-section{
         background-color: rgba(10, 51, 37, 0.821);
         height: 100vh;
-        flex-wrap: wrap;
     }
 }
 
@@ -146,22 +142,15 @@ i:hover{
     .footer-section{
         background-color: rgba(10, 51, 37, 0.821);
         height: 110vh;
-        flex-wrap: wrap;
-        
     }
-
-    .footer-name--dis-socialLink{
-        position: relative;
-        left: 20px;
-    }
-
-    p{
-        width: 90%;
-    }
-
     .container{
         margin-right: 20px;
         margin-left: 20px;
+    }
+
+    .container p:hover{
+        transform: none;
+        color: #fff;
     }
 }
 
@@ -169,7 +158,6 @@ i:hover{
     .footer-section{
         background-color: rgba(10, 51, 37, 0.821);
         height: 190vh;
-        flex-wrap: wrap;
         text-align: center;
     }
 }
